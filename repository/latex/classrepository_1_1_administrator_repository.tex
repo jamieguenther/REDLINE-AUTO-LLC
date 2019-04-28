@@ -1,0 +1,93 @@
+\hypertarget{classrepository_1_1_administrator_repository}{}\section{repository.\+Administrator\+Repository Class Reference}
+\label{classrepository_1_1_administrator_repository}\index{repository.AdministratorRepository@{repository.AdministratorRepository}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrepository_1_1_administrator_repository_1_1_sold_vehicle_row_mapper}{Sold\+Vehicle\+Row\+Mapper}}
+\item 
+class \mbox{\hyperlink{classrepository_1_1_administrator_repository_1_1_vehicle_image_row_mapper}{Vehicle\+Image\+Row\+Mapper}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_a09e22fa5b41804b2d49469b0ca5109d4}\label{classrepository_1_1_administrator_repository_a09e22fa5b41804b2d49469b0ca5109d4}} 
+List$<$ Map$<$ String, Object $>$ $>$ {\bfseries get\+All\+Users} ()
+\item 
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_a90a34042a5a989095e35b34c2065ba27}\label{classrepository_1_1_administrator_repository_a90a34042a5a989095e35b34c2065ba27}} 
+int {\bfseries add\+Vehicle} (String vehicle\+Make, String vehicle\+Model, int vehicle\+Year, int vehicle\+Milage, int vehicle\+Price, String vehicle\+Vin, String vehicle\+Details, String vehicle\+Drivetrain, String vehicle\+Transmission, String vehicle\+Color, String vehicle\+Type, String image\+Blob)
+\item 
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_a33061f1d250592fcb7a37e68b219f976}\label{classrepository_1_1_administrator_repository_a33061f1d250592fcb7a37e68b219f976}} 
+List$<$ Vehicle $>$ {\bfseries get\+Vehicle\+For\+Update} (String vin\+Value)
+\item 
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_a057b68374cd0321790125d3066e1de8f}\label{classrepository_1_1_administrator_repository_a057b68374cd0321790125d3066e1de8f}} 
+int {\bfseries update\+Vehicle} (String vehicle\+Make, String vehicle\+Model, int vehicle\+Year, int vehicle\+Milage, int vehicle\+Price, String vehicle\+Vin, String vehicle\+Details, String vehicle\+Drivetrain, String vehicle\+Transmission, String vehicle\+Color, String vehicle\+Type, String image\+Blob)
+\item 
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_a6ad0837fe4f0191e152ad389199cc0a4}\label{classrepository_1_1_administrator_repository_a6ad0837fe4f0191e152ad389199cc0a4}} 
+List$<$ Sold\+Vehicle $>$ {\bfseries get\+All\+Report} ()
+\item 
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_a2bb8a7c2e2020236223d15b40a03a7fc}\label{classrepository_1_1_administrator_repository_a2bb8a7c2e2020236223d15b40a03a7fc}} 
+List$<$ Vehicle $>$ {\bfseries get\+Vehicle\+Delete\+Search} (String vehicle\+Vin, String vehicle\+Make, String vehicle\+Model, int vehicle\+Year)
+\item 
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_ad4714a7dbdf9d9696c6e7eb0b850ace6}\label{classrepository_1_1_administrator_repository_ad4714a7dbdf9d9696c6e7eb0b850ace6}} 
+int {\bfseries get\+Vehicle\+Delete} (String vehicle\+Vin)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_ab72d97fba31cd2583bbe053fd691ce32}\label{classrepository_1_1_administrator_repository_ab72d97fba31cd2583bbe053fd691ce32}} 
+List$<$ Sold\+Vehicle $>$ {\bfseries get\+Sales\+Report} (List$<$ Sold\+Vehicle $>$ sold\+Vehicles)
+\item 
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_a19ae4d40e3049a85299e1ccecd499627}\label{classrepository_1_1_administrator_repository_a19ae4d40e3049a85299e1ccecd499627}} 
+String {\bfseries get\+Query\+To\+Add\+Vehicle} (String vehicle\+Make, String vehicle\+Model, int vehicle\+Year, int vehicle\+Milage, int vehicle\+Price, String vehicle\+Vin, String vehicle\+Details, String vehicle\+Drivetrain, String vehicle\+Transmission, String vehicle\+Color, String vehicle\+Type, String image\+Blob)
+\item 
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_ae023bf57638e837de711e8fc60f7cdf0}\label{classrepository_1_1_administrator_repository_ae023bf57638e837de711e8fc60f7cdf0}} 
+String {\bfseries get\+Query\+To\+Update\+Vehicle} (String vehicle\+Make, String vehicle\+Model, int vehicle\+Year, int vehicle\+Milage, int vehicle\+Price, String vehicle\+Vin, String vehicle\+Details, String vehicle\+Drivetrain, String vehicle\+Transmission, String vehicle\+Color, String vehicle\+Type, String image\+Blob)
+\item 
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_a60d62af7a4681de7e112b25552540955}\label{classrepository_1_1_administrator_repository_a60d62af7a4681de7e112b25552540955}} 
+String {\bfseries get\+Query\+To\+Delete\+Vehicle} (String vehicle\+Vin, String vehicle\+Make, String vehicle\+Model, int vehicle\+Year)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_a6fccfae3a5233d32948b6cfab9372cc9}\label{classrepository_1_1_administrator_repository_a6fccfae3a5233d32948b6cfab9372cc9}} 
+Jdbc\+Template {\bfseries jdbc\+Template}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_ac167c30a77017f08b722169aa6231b11}\label{classrepository_1_1_administrator_repository_ac167c30a77017f08b722169aa6231b11}} 
+static String {\bfseries U\+P\+D\+A\+T\+E\+\_\+\+V\+H\+CL} = \char`\"{}U\+P\+D\+A\+TE R\+L\+A\+\_\+\+V\+H\+CL \char`\"{}
+\item 
+static String {\bfseries A\+D\+D\+\_\+\+V\+H\+CL}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file Administrator\+Repository.\+java.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrepository_1_1_administrator_repository_a2f23aa21d7e268573bf0cc2dd634f843}\label{classrepository_1_1_administrator_repository_a2f23aa21d7e268573bf0cc2dd634f843}} 
+\index{repository.AdministratorRepository@{repository.AdministratorRepository}!ADD\_VHCL@{ADD\_VHCL}}
+\index{ADD\_VHCL@{ADD\_VHCL}!repository.AdministratorRepository@{repository.AdministratorRepository}}
+\subsubsection{\texorpdfstring{ADD\_VHCL}{ADD\_VHCL}}
+{\footnotesize\ttfamily String repository.\+Administrator\+Repository.\+A\+D\+D\+\_\+\+V\+H\+CL\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{stringliteral}{"INSERT INTO RLA\_VHCL (VHCL\_VIN, VHCL\_MAKE, VHCL\_MODL, VHCL\_YEAR, VHCL\_TRNS, "}}
+\DoxyCodeLine{            + \textcolor{stringliteral}{"VHCL\_DRTN, VHCL\_COLR, VHCL\_DESC, VHCL\_TYPE, VHCL\_PRICE, VHCL\_MILG, VHCL\_PICS) VALUES("}}
+
+\end{DoxyCode}
+
+
+Definition at line 34 of file Administrator\+Repository.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/dma165/\+Documents/\+Courses/\+Capstone/\+Tests/redline-\/backend/src/main/java/repository/Administrator\+Repository.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\hypertarget{classrepository_1_1_vehicle_search_repository}{}\section{repository.\+Vehicle\+Search\+Repository Class Reference}
+\label{classrepository_1_1_vehicle_search_repository}\index{repository.VehicleSearchRepository@{repository.VehicleSearchRepository}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classrepository_1_1_vehicle_search_repository_1_1_vehicle_image_row_mapper}{Vehicle\+Image\+Row\+Mapper}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrepository_1_1_vehicle_search_repository_a0684c665d880be1396f31c2228f9e06d}\label{classrepository_1_1_vehicle_search_repository_a0684c665d880be1396f31c2228f9e06d}} 
+List$<$ Vehicle $>$ {\bfseries get\+Slider\+Images} (Array\+List$<$ String $>$ vehicle\+Make\+Lst, String vehicle\+Model, int vehicle\+Year)
+\item 
+\mbox{\Hypertarget{classrepository_1_1_vehicle_search_repository_a1e16fae6c7bcbfaf86e9b926146b946d}\label{classrepository_1_1_vehicle_search_repository_a1e16fae6c7bcbfaf86e9b926146b946d}} 
+List$<$ Vehicle $>$ {\bfseries get\+Monthly\+Special} ()
+\item 
+\mbox{\Hypertarget{classrepository_1_1_vehicle_search_repository_a662db6d5c7913d2c2df1a86bccbf42ed}\label{classrepository_1_1_vehicle_search_repository_a662db6d5c7913d2c2df1a86bccbf42ed}} 
+List$<$ Vehicle $>$ {\bfseries get\+Vehicles} (String vehicle\+Make, String vehicle\+Model, int vehicle\+Year, int price\+Lower, int price\+Higher)
+\item 
+\mbox{\Hypertarget{classrepository_1_1_vehicle_search_repository_afc1e2fe4d49dbe5da70208d1d92576c6}\label{classrepository_1_1_vehicle_search_repository_afc1e2fe4d49dbe5da70208d1d92576c6}} 
+List$<$ Vehicle $>$ {\bfseries get\+Vehicles\+Adv} (String vehicle\+Make, String vehicle\+Model, int year\+Low, int year\+High, int price\+Lower, int price\+Higher, boolean sedan, boolean hatchback, boolean convertible, boolean coupe, boolean suv, boolean pickup)
+\item 
+\mbox{\Hypertarget{classrepository_1_1_vehicle_search_repository_addcc9a202849d51f18dca62bc7b536fc}\label{classrepository_1_1_vehicle_search_repository_addcc9a202849d51f18dca62bc7b536fc}} 
+List$<$ Map$<$ String, Object $>$ $>$ {\bfseries get\+All\+Vehicles} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrepository_1_1_vehicle_search_repository_af8cb004eb52ceba40b7c52545829910a}\label{classrepository_1_1_vehicle_search_repository_af8cb004eb52ceba40b7c52545829910a}} 
+String {\bfseries get\+Query\+For\+Advance\+Search} (String vehicle\+Make, String vehicle\+Model, int year\+Low, int year\+High, int price\+Lower, int price\+Higher, boolean sedan, boolean hatchback, boolean convertible, boolean coupe, boolean suv, boolean pickup)
+\item 
+\mbox{\Hypertarget{classrepository_1_1_vehicle_search_repository_a16675dd783fdffb326ad796ec7aa4f11}\label{classrepository_1_1_vehicle_search_repository_a16675dd783fdffb326ad796ec7aa4f11}} 
+Array\+List$<$ String $>$ {\bfseries get\+Vehicle\+Types\+Array} (boolean sedan, boolean hatchback, boolean convertible, boolean coupe, boolean suv, boolean pickup, Array\+List$<$ String $>$ types)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrepository_1_1_vehicle_search_repository_a91d2a294bc6300ba8e04598c78fd26f5}\label{classrepository_1_1_vehicle_search_repository_a91d2a294bc6300ba8e04598c78fd26f5}} 
+Jdbc\+Template {\bfseries jdbc\+Template}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrepository_1_1_vehicle_search_repository_a27e4596d68f9dd8d48c6522e10e02d8f}\label{classrepository_1_1_vehicle_search_repository_a27e4596d68f9dd8d48c6522e10e02d8f}} 
+static final String {\bfseries S\+E\+A\+R\+C\+H\+\_\+\+V\+H\+C\+L\+\_\+\+Q\+U\+E\+RY} = \char`\"{} select $\ast$ from R\+L\+A\+\_\+\+V\+H\+CL where (V\+H\+C\+L\+\_\+\+M\+A\+KE = ? \char`\"{}
+\item 
+\mbox{\Hypertarget{classrepository_1_1_vehicle_search_repository_a2a391838e968688747d6b181ee3c2c4f}\label{classrepository_1_1_vehicle_search_repository_a2a391838e968688747d6b181ee3c2c4f}} 
+static final String {\bfseries G\+E\+T\+\_\+\+M\+O\+N\+T\+H\+L\+Y\+\_\+\+S\+P\+E\+C\+I\+A\+L\+\_\+\+Q\+U\+E\+RY} = \char`\"{} select $\ast$ from R\+L\+A\+\_\+\+V\+H\+CL where V\+H\+C\+L\+\_\+\+P\+I\+CS is not null \char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file Vehicle\+Search\+Repository.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/dma165/\+Documents/\+Courses/\+Capstone/\+Tests/redline-\/backend/src/main/java/repository/Vehicle\+Search\+Repository.\+java\end{DoxyCompactItemize}
